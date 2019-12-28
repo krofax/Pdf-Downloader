@@ -1,16 +1,3 @@
-// const PDFDocument = require('pdfkit');
-// const fs = require('fs');
-// exports.pdf = (req, res) => {
-//     const doc = new PDFDocument()
-//     let filename = 'test' + '.pdf';
-//     const pdfPath = path.join('data', 'pdf', filename)
-//     //Striping out special characters
-//     // filename = encodeURIComponent(filename) + '.pdf'
-
-//     //setting response to attachment (Downloads)
-//     res.setHeader('Content-disposition', 'attachment; filename="' + filename + '" ')
-//     res.setHeader('Content-type', 'application/pdf')
-
 //     const content = req.body.content
 //     doc.y = 300
 //     doc.getMaxListeners(content, 50, 50)
@@ -32,7 +19,7 @@ exports.pdf = (req, res) => {
 
     pdfDoc.text('Hello world!')
     console.log('response', res)
-    res.send(res)
+    res.send(res).
 
     pdfDoc.end();
 
