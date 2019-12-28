@@ -6,7 +6,7 @@ require('dotenv/config');
 const app = express();
 
 //Import Routes
-// const authRoute = require('./routes/auth');
+const allRoute = require('./routes/auth');
 
 //Connect to DB
 let mongoDB = process.env.MONGODB_URI || 'mongodb://speechuser:speech1@ds359118.mlab.com:59118/speecapp'
@@ -24,6 +24,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 //Routes Middleware
-// app.use('/api', authRoute);
+app.use('/api', allRoute);
 let PORT = process.env.PORT ||8080;
 app.listen(PORT, () => console.log('app up and running'));

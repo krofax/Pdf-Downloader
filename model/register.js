@@ -19,4 +19,4 @@ const registerSchema = new Schema({
     {timestamps: true}
 )
 
-module.exports = mongoose.model('Register', registerSchema);
+module.exports = mongoose.model('User', registerSchema);
