@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "A simple script that downloads pdf files to the server from the clients response",
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "bindings": "^1.5.0",
     "fsevents": "^1.2.11",
@@ -19,6 +19,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
+  "engines": {
+    "node": "10.14.1"
+  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/krofax/Pdf-Downloader.git"
