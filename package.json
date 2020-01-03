@@ -2,9 +2,9 @@
   "name": "cryptoexchange",
   "version": "1.0.0",
   "description": "welcome to crytoexchange",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "engines": {
     "node": "10.14.1"
