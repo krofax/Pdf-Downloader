@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "A simple script that downloads pdf files to the server from the clients response",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "10.14.1"
+  },
   "dependencies": {
-    "bindings": "^1.5.0",
-    "fsevents": "^1.2.11",
-    "nan": "^2.14.0",
     "pdfkit": "^0.11.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -19,13 +23,6 @@
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "engines": {
-    "node": "10.14.1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/krofax/Pdf-Downloader.git"
