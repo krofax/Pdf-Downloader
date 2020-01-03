@@ -21,7 +21,7 @@ exports.pdf = (req, res) => {
 
     
     pdfDoc.pipe(res);
-
+    console.log('pdf created succesfully')
     pdfDoc.end();
 
    
