@@ -3,6 +3,6 @@ const router = express.Router();
 
 const pdfController = require('../controller/pdf')
 
-router.post('/', pdfController.pdf)
+router.get('/', pdfController.pdf)
 
 module.exports = router
