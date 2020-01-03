@@ -1,14 +1,26 @@
 {
-  "name": "backend",
+  "name": "cryptoexchange",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "welcome to crytoexchange",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Beveloper",
+  "engines": {
+    "node": "10.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krofax/bank-frontend-app.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krofax/bank-frontend-app.git/issues"
+  },
+  "homepage": "https://github.com/krofax/bank-frontend-app.git#readme",
   "dependencies": {
+    "@hapi/joi": "^16.1.5",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -21,6 +33,6 @@
     "nodemailer": "^6.3.1",
     "nodemailer-mailgun-transport": "^1.4.0",
     "nodemon": "^1.19.2",
-    "pdfkit": "^0.11.0"
+    "react-router-dom": "^5.1.2"
   }
 }
