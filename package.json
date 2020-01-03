@@ -1,7 +1,7 @@
 {
-  "name": "cryptoexchange",
+  "name": "Pdf-Downloader",
   "version": "1.0.0",
-  "description": "welcome to crytoexchange",
+  "description": "A simple script that downloads pdf files to the server from the clients response",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/krofax/bank-frontend-app.git"
+    "url": "git+https://github.com/krofax/Pdf-Downloader.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/krofax/bank-frontend-app.git/issues"
+    "url": "https://github.com/krofax/Pdf-Downloader.git"
   },
-  "homepage": "https://github.com/krofax/bank-frontend-app.git#readme",
+  "homepage": "https://github.com/krofax/Pdf-Downloader.git#readme",
   "dependencies": {
     "@hapi/joi": "^16.1.5",
     "bcryptjs": "^2.4.3",
