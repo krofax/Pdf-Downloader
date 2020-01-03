@@ -3,8 +3,8 @@ const path = require('path')
 const PDFDocument = require('pdfkit');
 
 
-exports.pdf = (req, res) => {
-
+exports.pdf = async (req, res) => {
+try {
     const filename = 'test1234'
     const pdfPath = path.join('data', 'pdf', filename + '.pdf')
     
@@ -16,13 +16,20 @@ exports.pdf = (req, res) => {
     pdfDoc.pipe(fs.createWriteStream(pdfPath));
     
 
-    const content = req.body.content
+    const content = await req.body.content
     pdfDoc.text(content)
 
     
-    pdfDoc.pipe(res);
+    await pdfDoc.pipe(res);
     console.log('pdf created')
     pdfDoc.end();
+    
+}
+
+catch (err) {
+    res.status(400).json({ message: 'An error occured while' });
+  }
+    
 
    
 
