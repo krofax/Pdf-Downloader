@@ -5,7 +5,7 @@ const PDFDocument = require('pdfkit');
 
 exports.pdf = (req, res) => {
 
-    const filename = req.body.filename;
+    const filename = 'test1234'
     const pdfPath = path.join('data', 'pdf', filename + '.pdf')
     
     const pdfDoc = new PDFDocument()
