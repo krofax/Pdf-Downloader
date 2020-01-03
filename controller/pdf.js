@@ -27,7 +27,7 @@ try {
 }
 
 catch (err) {
-    res.status(400).json({ message: 'An error occured while' });
+    res.status(400).json({ message: 'An error occured' });
   }
     
 
