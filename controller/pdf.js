@@ -17,7 +17,7 @@ exports.pdf = (req, res) => {
     
 
     const content = req.body.content
-    pdfDoc.text('heyyyyy')
+    pdfDoc.text(content)
 
     
     pdfDoc.pipe(res);
