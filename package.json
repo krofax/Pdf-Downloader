@@ -22,7 +22,6 @@
   "engines": {
     "node": "10.14.1"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/krofax/Pdf-Downloader.git"
